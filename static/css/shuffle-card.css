@@ -1,0 +1,57 @@
+.shuffle-card-section {
+    --card-width: 150px;
+    --card-height: 225px;
+    --card-border-radius: 10px;
+}
+
+.shuffle-card-section .spread-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1em, 10vw, 5em);
+}
+
+.shuffle-card-section .spread-btn-container .spread-btn {
+    background-color: var(--primary-color);
+    padding: 0.25em 0.5em;
+    width: min(90vw, 200px);
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out,
+                color 0.25s ease-in-out;
+}
+
+.shuffle-card-section .spread-btn-container .spread-btn:hover {
+    background-color: white;
+    color: var(--text-dark-color);
+}
+
+.shuffle-card-section .spread-btn-container .spread-btn[data-selected="true"] {
+    background-color: var(--secondary-color);
+    color: var(--text-dark-color);
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-height: calc(var(--card-height) * 1.5);
+    position: relative;
+}
+
+.card {
+    background-image: url(../../infographics/interactive-names/ace-card-back.png);
+    background-size: cover;
+    border-radius: var(--card-border-radius);
+    width: var(--card-width);
+    height: var(--card-height);
+    border: 2px double gray;
+    position: absolute;
+    transition: transform 0.3s ease-in-out, left 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}

@@ -1,0 +1,86 @@
+.cartomancy-container section {
+    padding-block: var(--universal-padding-heavy);
+}
+
+.cartomancy-container .promo-section .promo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, var(--container-max-width));
+    margin-inline: auto;
+    gap: var(--space-btw-flex-elements);
+}
+
+.cartomancy-container .promo-section .promo-container .promo-heading {
+    text-align: center;
+    width: min(100%, 1000px);
+}
+
+.cartomancy-container .promo-section .promo-container .divider {
+    width: min(800px, 100%);
+}
+
+.cartomancy-container .promo-section .promo-container .promo-icons {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    gap: min(15vw, 5em);
+    width: 100%;
+    position: relative;
+}
+
+.cartomancy-container .promo-section .promo-container .promo-icons .icon-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-inline: min(5vw, 1.4em);
+}
+
+.cartomancy-container .promo-section .promo-container .icon-box[data-sep="before"]:before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(-1 * min(15vw, 5em) / 2);
+    background-color: #707070;
+}
+
+@media (max-width: 850px) {
+    .cartomancy-container .promo-section .promo-container .promo-icons {
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+
+    .cartomancy-container .promo-section .promo-container .icon-box[data-sep="before"]:before {
+        content: none;
+    }
+}
+
+.cartomancy-container .promo-section .promo-container .promo-icons .icon-box h4 {
+    margin-bottom: 0.25em;
+}
+
+.cartomancy-container .promo-section .promo-container .promo-icons .icon-box .promo-icon img {
+    max-width: 100px;
+    width: 20vh;
+    margin-bottom: 1em;
+}
+
+.cartomancy-container .btn-container button {
+    color: var(--text-dark-color, black);
+    background-color: var(--secondary-color);
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    border-radius: 2em;
+    border: none;
+    transition: background-color 0.2s linear;
+}
+
+.cartomancy-container .btn-container button:hover {
+    background-color: #fff;
+}

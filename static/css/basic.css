@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cartomancy-container {
+    --text-dark-color: #4c1c1c;
+    --universal-padding-heavy: 2em;
+    --container-max-width: 1600px;
+    --space-btw-flex-elements: 3em;
+    --header-height: 10vh;
+
+    --primary-color: rgb(186, 69, 71);
+    --secondary-color: #f5bd79;
+}
+
+[data-color="primary"] {
+    color: var(--primary-color);
+}
+
+[data-color="secondary"] {
+    color: var(--secondary-color);
+}
+
+.cartomancy-container, .cartomancy-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cartomancy-container {
+    font-size: 18px;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    position: relative;
+}
+
+.cartomancy-container section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: min(90%, var(--container-max-width));
+    margin-inline: auto;
+    gap: var(--space-btw-flex-elements);
+}

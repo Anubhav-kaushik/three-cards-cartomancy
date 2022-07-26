@@ -1,0 +1,40 @@
+.cartomancy-container .result-container {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(1em, 8vw, 6em);
+    background-color: peachpuff;
+    width: min(90%, 1380px);
+    padding: 3em;
+    border-radius: 10px;
+    color: black;
+}
+
+.cartomancy-container .result-container .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: min(4vh, 1em);
+}
+
+.cartomancy-container .result-container #column-1 {
+    flex-basis: 25%;
+    color: var(--text-dark-color);
+}
+
+.cartomancy-container .result-container #column-1 img {
+    width: min(90%, 250px);
+}
+
+.cartomancy-container .result-container #column-2 {
+    justify-content: space-evenly;
+}
+
+.cartomancy-container .result-container #column-2 h3,
+.cartomancy-container .result-container #column-2 p {
+    text-align: left;
+}
+
+.cartomancy-container .content-container p {
+    width: min(90%, 1380px);
+    margin-inline: auto !important;
+}

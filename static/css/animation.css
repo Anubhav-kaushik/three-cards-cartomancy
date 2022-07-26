@@ -1,0 +1,53 @@
+@keyframes popIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes popOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutBottom {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+}
+
+
+[data-animation-pop="in"] {
+    animation: popIn 0.5s linear 0s 1 forwards;
+}
+
+[data-animation-pop="out"] {
+    animation: popIn 0.5s linear 0s 1 forwards;
+}
+
+[data-animation-fade="in bottom"] {
+    animation: fadeInBottom 0.8s ease 0s 1 forwards;
+}
+
