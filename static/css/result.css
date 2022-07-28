@@ -1,12 +1,37 @@
 .cartomancy-container .result-container {
     display: flex;
-    justify-content: space-between;
-    gap: clamp(1em, 8vw, 6em);
-    background-color: peachpuff;
-    width: min(90%, 1380px);
-    padding: 3em;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: min(100%, 1380px);
+    padding: 1em;
     border-radius: 10px;
     color: black;
+    margin-block: min(2em, 6vh);
+}
+
+.cartomancy-container .result-container .border-container {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(1em, 8vw, 6em);
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 2em 3em;
+    border-image: url(../../infographics/interactive-names/result-box-border.svg) 30 / 40px round;
+}
+
+@media (max-width: 1020px) {
+    .cartomancy-container .result-container .border-container {
+        flex-direction: column;
+        border-image-slice: 40;
+        border-image-width: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartomancy-container .result-container .border-container {
+        border-image: none;
+        padding: 0;
+    }
 }
 
 .cartomancy-container .result-container .column {
@@ -22,7 +47,9 @@
 }
 
 .cartomancy-container .result-container #column-1 img {
-    width: min(90%, 250px);
+    width: min(70vw, 250px);
+    box-shadow: 2px 5px 15px #333;
+    border-radius: 12px;
 }
 
 .cartomancy-container .result-container #column-2 {
@@ -37,4 +64,12 @@
 .cartomancy-container .content-container p {
     width: min(90%, 1380px);
     margin-inline: auto !important;
+}
+
+#cartomancy-section-3 .promo-container {
+    gap: 0;
+}
+
+#cartomancy-section-3 .btn-container {
+    margin-top: min(2em, 6vh);
 }

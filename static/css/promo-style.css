@@ -71,6 +71,10 @@
     margin-bottom: 1em;
 }
 
+.cartomancy-container .btn-container img {
+    animation: slideHorizontal 1s ease infinite;
+}
+
 .cartomancy-container .btn-container button {
     color: var(--text-dark-color, black);
     background-color: var(--secondary-color);
@@ -84,3 +88,10 @@
 .cartomancy-container .btn-container button:hover {
     background-color: #fff;
 }
+
+.cartomancy-container .btn-container button:disabled {
+    background-color: #fff;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+

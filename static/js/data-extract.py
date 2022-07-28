@@ -11,9 +11,9 @@ def getCardInfo(cardHeading, file):
     card['name'] = cardHeading.lower().replace(' ', '-')
 
     card['images'] = {
-        'svg': f'{baseUrl}/svg/{card["name"]}.svg',
-        'webp': f'{baseUrl}/webp/{card["name"]}.webp',
-        'jpg': f'{baseUrl}/jpg/{card["name"]}.jpg',
+        'svg': f'{card["name"]}.svg',
+        'webp': f'{card["name"]}.webp',
+        'jpg': f'{card["name"]}.jpg',
     }
 
     counter = 0

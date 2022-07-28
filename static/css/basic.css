@@ -33,9 +33,11 @@ body {
 .cartomancy-container {
     font-size: 18px;
     width: 100%;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(76, 28, 28, 0.9);
+    border-image: url(../../infographics/interactive-names/main-border-image.svg) 90 / 90px round;
     color: white;
     position: relative;
+    padding-block: 1em;
 }
 
 .cartomancy-container section {
@@ -46,4 +48,16 @@ body {
     width: min(90%, var(--container-max-width));
     margin-inline: auto;
     gap: var(--space-btw-flex-elements);
+}
+
+@keyframes slideHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(1em);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

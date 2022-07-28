@@ -110,7 +110,7 @@
 
                     <div class="btn-container">
                         <div class="arrow-container">
-                            <img src="infographics/interactive-names/arrow-btn.svg" alt="click here" onclick="toggleElementVisibility('.popup-container')">
+                            <img src="infographics/interactive-names/arrow-btn.svg" alt="click here" onclick="toggleElementVisibility('.popup-container');observeInputValue('#popup-input', '#popup-btn')">
                         </div>
                     </div>
                 </div>
@@ -161,35 +161,37 @@
                     </div>
 
                     <div class="result-container">
-                        <div class="column" id="column-1">
-                            <div class="row">
-                                <picture>
-                                    <source src="infographics/interactive-names/ace-card-back.webp" type="image/webp">
-                                    <img src="infographics/interactive-names/ace-card-back.png" alt="card">
-                                </picture>
+                        <div class="border-container">
+                            <div class="column" id="column-1">
+                                <div class="row">
+                                    <picture>
+                                        <source src="infographics/interactive-names/ace-card-back.webp" type="image/webp">
+                                        <img src="infographics/interactive-names/ace-card-back.png" alt="card">
+                                    </picture>
+                                </div>
+                                <div class="row">
+                                    <p>Ace of Hearts</p>
+                                </div>
                             </div>
-                            <div class="row">
-                                <p>Ace of Hearts</p>
-                            </div>
-                        </div>
-                        <div class="column" id="column-2">
-                            <div class="row">
-                                <h3 data-color="primary">Past</h3>
-                                <p>You’re fondly looking back on the beginning of a treasured relationship or
-                                    friendship.
-                                    <br>
-                                    Remembering those early days may give you valuable insights into your current
-                                    situation.</p>
-                            </div>
-                            <div class="row">
-                                <h3 data-color="primary">Present</h3>
-                                <p>A new friendship or relationship is blossoming in your life. Good news is close at
-                                    hand.</p>
-                            </div>
-                            <div class="row">
-                                <h3 data-color="primary">Future</h3>
-                                <p>Though you may feel anxious now, you can wait confidently upon the future. A lovely
-                                    new friendship or relationship is on the horizon.</p>
+                            <div class="column" id="column-2">
+                                <div class="row">
+                                    <h3 data-color="primary">Past</h3>
+                                    <p>You’re fondly looking back on the beginning of a treasured relationship or
+                                        friendship.
+                                        <br>
+                                        Remembering those early days may give you valuable insights into your current
+                                        situation.</p>
+                                </div>
+                                <div class="row">
+                                    <h3 data-color="primary">Present</h3>
+                                    <p>A new friendship or relationship is blossoming in your life. Good news is close at
+                                        hand.</p>
+                                </div>
+                                <div class="row">
+                                    <h3 data-color="primary">Future</h3>
+                                    <p>Though you may feel anxious now, you can wait confidently upon the future. A lovely
+                                        new friendship or relationship is on the horizon.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -214,19 +216,19 @@
             <div class="popup-container" data-visibility="hidden">
                 <div class="popup">
                     <div class="input-field">
-                        <input type="text" name="ques" id="input-ques"
+                        <input type="text" name="ques" id="popup-input"
                             placeholder="Enter your question or subject here">
                     </div>
                     <div class="btn-container">
-                        <button onclick="quesSubmit()">Submit</button>
+                        <button onclick="quesSubmit()" id="popup-btn" disabled>Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="static/js/action.js"></script>
     <script src="static/js/shuffle-card.js"></script>
+    <script src="static/js/action.js"></script>
 </body>
 
 </html>

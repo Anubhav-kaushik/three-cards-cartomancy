@@ -12,10 +12,6 @@
     width: min(400px, 90%);
 }
 
-.cartomancy-container .cartomancy-main-content {
-    position: relative;
-}
-
 .cartomancy-container .divider img {
     width: min(250px, 90%);
 }

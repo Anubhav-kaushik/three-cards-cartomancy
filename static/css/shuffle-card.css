@@ -7,7 +7,8 @@
 .shuffle-card-section .spread-btn-container {
     display: flex;
     justify-content: center;
-    gap: clamp(1em, 10vw, 5em);
+    gap: clamp(0.5em, 5vw, 3em);
+    flex-wrap: wrap;
 }
 
 .shuffle-card-section .spread-btn-container .spread-btn {
@@ -35,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     min-height: calc(var(--card-height) * 1.5);
     position: relative;
 }
