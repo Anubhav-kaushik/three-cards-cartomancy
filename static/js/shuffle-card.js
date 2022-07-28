@@ -145,7 +145,6 @@ async function move2center(oneByone = false, delay = 0.15, splitHalf = false, re
                 cards[cards.length - j - 1].style.left = `${centerX - cards[cards.length-j-1].offsetWidth/2}px`;
                 cards[cards.length - j - 1].style.zIndex = zIndex++;
             }
-            console.log(`inside while loop: ${j}`);
             j++;
         }
         i = j-1;
@@ -296,7 +295,7 @@ function sleep(seconds) {
     return new Promise(resolve => setTimeout(resolve, seconds * 1000));
 }
 
-function resetPosition() {
+function resetCardsPosition() {
     const cards = document.querySelectorAll(cardClass);
 
     for (let card of cards) {
@@ -304,7 +303,7 @@ function resetPosition() {
         const isChoosen = card.dataset.choosen;
 
         if (isChoosen == "true") {
-            moveUp(dataId, 0);
+            // moveUp(dataId, 0);
             card.dataset.choosen = "false";
         }
     }
@@ -315,7 +314,7 @@ async function shuffleCards() {
         Shuffle the cards in the deck.
     */
     shuffleCardsNum();
-    resetPosition();
+    resetCardsPosition();
 
     move2left('20%', oneByone = false, delay = 0.15, splitHalf = true, reverse = false);
     move2right('20%', oneByone = false, delay = 0.15, splitHalf = true, reverse = true);
@@ -383,9 +382,10 @@ for (let card of cards) {
         const isChoosen = entry.target.dataset.choosen
 
         if (numCardsChoosed() < 1 && isChoosen == "false") {
-            moveUp(cardId, 80);
+            // moveUp(cardId, 40);
+            entry.target.dataset.choosen = true;
         } else if (isChoosen == "true") {
-            moveUp(cardId, 0);
+            // moveUp(cardId, 0);
             entry.target.dataset.choosen = false;
         } else {
             console.log('You can only choose 1 cards')

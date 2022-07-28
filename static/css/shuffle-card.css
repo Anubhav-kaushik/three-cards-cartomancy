@@ -1,6 +1,8 @@
 .shuffle-card-section {
-    --card-width: 150px;
-    --card-height: 225px;
+    /* card ratio: 167:234 */
+    --multiply-factor: 1;
+    --card-width: calc(167px * var(--multiply-factor, 1));
+    --card-height: calc(234px * var(--multiply-factor, 1));
     --card-border-radius: 10px;
 }
 
@@ -42,17 +44,25 @@
 }
 
 .card {
-    background-image: url(../../infographics/interactive-names/ace-card-back.png);
+    background-image: url(../../infographics/interactive-names/card-back.png);
     background-size: cover;
     border-radius: var(--card-border-radius);
     width: var(--card-width);
     height: var(--card-height);
-    border: 2px double gray;
+    border: 1px double #ddd;
     position: absolute;
     transition: transform 0.3s ease-in-out, left 0.5s ease-in-out;
     cursor: pointer;
 }
 
-.card:hover {
+.card[data-choosen="false"] {
+    transform: translateY(0);
+}
+
+.card[data-choosen="false"]:hover {
     transform: translateY(-20px);
+}
+
+.card[data-choosen="true"] {
+    transform: translateY(-50px);
 }

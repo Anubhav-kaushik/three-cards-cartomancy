@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Cabin Bold';
+    src: url(../../infographics/fonts/Cabin-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Regular';
+    src: url(../../infographics/fonts/Cabin-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url(../../infographics/fonts/DancingScript.ttf);
+}
 
 /* Desktop */
 @media (min-width: 1150px) {
@@ -60,6 +74,10 @@
     }
 }
 
+* {
+    font-family: 'Cabin Regular';
+}
+
 .cartomancy-container p {
     font-size: var(--font-size-p);
     line-height: var(--line-height-p);
@@ -101,4 +119,8 @@
 
 .cartomancy-container h1 {
     margin-block: 0.25em;
+}
+
+[data-font-family="dancing-script"] {
+    font-family: 'Dancing Script';
 }

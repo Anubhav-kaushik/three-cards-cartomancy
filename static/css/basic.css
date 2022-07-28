@@ -33,7 +33,9 @@ body {
 .cartomancy-container {
     font-size: 18px;
     width: 100%;
-    background-color: rgb(76, 28, 28, 0.9);
+    background: linear-gradient(0deg, rgba(76, 28, 28, 0.9), rgba(76, 28, 28, 0.9)), url(../../infographics/interactive-names/bg-image.webp);
+    background-repeat:no-repeat;
+    background-size: cover;
     border-image: url(../../infographics/interactive-names/main-border-image.svg) 90 / 90px round;
     color: white;
     position: relative;

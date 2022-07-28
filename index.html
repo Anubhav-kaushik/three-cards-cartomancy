@@ -34,7 +34,7 @@
             <section class="promo-section" data-visibility="visible" id="cartomancy-section-1">
                 <div class="promo-container">
                     <div class="promo-heading">
-                        <h1 data-color="secondary">
+                        <h1 data-color="secondary" data-font-family="dancing-script">
                             Try Your Hand at Playing Cards Tarot
                         </h1>
                         <p>
@@ -119,17 +119,17 @@
             <section class="shuffle-card-section" data-visibility="hidden" id="cartomancy-section-2">
                 <h4>Select your reading and see what’s ahead.</h4>
                 <div class="spread-btn-container">
-                    <div class="spread-btn" data-spread="1">
+                    <div class="spread-btn" data-spread="1" onclick="changeSpreadStatus(this)">
                         <p>
                             Past / Present / Future
                         </p>
                     </div>
-                    <div class="spread-btn" data-spread="2">
+                    <div class="spread-btn" data-spread="2" onclick="changeSpreadStatus(this)">
                         <p>
                             Love
                         </p>
                     </div>
-                    <div class="spread-btn" data-spread="3">
+                    <div class="spread-btn" data-spread="3" onclick="changeSpreadStatus(this)">
                         <p>
                             Career
                         </p>
@@ -149,7 +149,7 @@
             <section class="promo-section" data-visibility="hidden" id="cartomancy-section-3">
                 <div class="promo-container">
                     <div class="promo-heading">
-                        <h1>
+                        <h1 data-color="secondary" data-font-family="dancing-script">
                             Result
                         </h1>
                     </div>
@@ -208,7 +208,7 @@
                     </div>
 
                     <div class="btn-container">
-                        <button>Click Here</button>
+                        <button onclick="resetGame()">Play Again</button>
                     </div>
                 </div>
             </section>

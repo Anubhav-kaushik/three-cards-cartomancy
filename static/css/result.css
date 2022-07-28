@@ -48,8 +48,9 @@
 
 .cartomancy-container .result-container #column-1 img {
     width: min(70vw, 250px);
+    aspect-ratio: 167/234;
     box-shadow: 2px 5px 15px #333;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .cartomancy-container .result-container #column-2 {

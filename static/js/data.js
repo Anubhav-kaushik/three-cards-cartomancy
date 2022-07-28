@@ -2,7 +2,7 @@ const cardsInfo = [{
     "heading": "Ace of Hearts",
     "name": "ace-of-hearts",
     "images": {
-        "svg": "ace-of-hearts.svg",
+        "png": "ace-of-hearts.png",
         "webp": "ace-of-hearts.webp",
         "jpg": "ace-of-hearts.jpg"
     },
@@ -27,7 +27,7 @@ const cardsInfo = [{
     "heading": "Two of Hearts",
     "name": "two-of-hearts",
     "images": {
-        "svg": "two-of-hearts.svg",
+        "png": "two-of-hearts.png",
         "webp": "two-of-hearts.webp",
         "jpg": "two-of-hearts.jpg"
     },
@@ -52,7 +52,7 @@ const cardsInfo = [{
     "heading": "Three of Hearts",
     "name": "three-of-hearts",
     "images": {
-        "svg": "three-of-hearts.svg",
+        "png": "three-of-hearts.png",
         "webp": "three-of-hearts.webp",
         "jpg": "three-of-hearts.jpg"
     },
@@ -77,7 +77,7 @@ const cardsInfo = [{
     "heading": "Four of Hearts",
     "name": "four-of-hearts",
     "images": {
-        "svg": "four-of-hearts.svg",
+        "png": "four-of-hearts.png",
         "webp": "four-of-hearts.webp",
         "jpg": "four-of-hearts.jpg"
     },
@@ -102,7 +102,7 @@ const cardsInfo = [{
     "heading": "Five of Hearts",
     "name": "five-of-hearts",
     "images": {
-        "svg": "five-of-hearts.svg",
+        "png": "five-of-hearts.png",
         "webp": "five-of-hearts.webp",
         "jpg": "five-of-hearts.jpg"
     },
@@ -127,7 +127,7 @@ const cardsInfo = [{
     "heading": "Six of Hearts",
     "name": "six-of-hearts",
     "images": {
-        "svg": "six-of-hearts.svg",
+        "png": "six-of-hearts.png",
         "webp": "six-of-hearts.webp",
         "jpg": "six-of-hearts.jpg"
     },
@@ -152,7 +152,7 @@ const cardsInfo = [{
     "heading": "Seven of Hearts",
     "name": "seven-of-hearts",
     "images": {
-        "svg": "seven-of-hearts.svg",
+        "png": "seven-of-hearts.png",
         "webp": "seven-of-hearts.webp",
         "jpg": "seven-of-hearts.jpg"
     },
@@ -177,7 +177,7 @@ const cardsInfo = [{
     "heading": "Eight of Hearts",
     "name": "eight-of-hearts",
     "images": {
-        "svg": "eight-of-hearts.svg",
+        "png": "eight-of-hearts.png",
         "webp": "eight-of-hearts.webp",
         "jpg": "eight-of-hearts.jpg"
     },
@@ -202,7 +202,7 @@ const cardsInfo = [{
     "heading": "Nine of Hearts",
     "name": "nine-of-hearts",
     "images": {
-        "svg": "nine-of-hearts.svg",
+        "png": "nine-of-hearts.png",
         "webp": "nine-of-hearts.webp",
         "jpg": "nine-of-hearts.jpg"
     },
@@ -227,7 +227,7 @@ const cardsInfo = [{
     "heading": "Ten of Hearts",
     "name": "ten-of-hearts",
     "images": {
-        "svg": "ten-of-hearts.svg",
+        "png": "ten-of-hearts.png",
         "webp": "ten-of-hearts.webp",
         "jpg": "ten-of-hearts.jpg"
     },
@@ -252,7 +252,7 @@ const cardsInfo = [{
     "heading": "Jack of Hearts",
     "name": "jack-of-hearts",
     "images": {
-        "svg": "jack-of-hearts.svg",
+        "png": "jack-of-hearts.png",
         "webp": "jack-of-hearts.webp",
         "jpg": "jack-of-hearts.jpg"
     },
@@ -277,7 +277,7 @@ const cardsInfo = [{
     "heading": "Queen of Hearts",
     "name": "queen-of-hearts",
     "images": {
-        "svg": "queen-of-hearts.svg",
+        "png": "queen-of-hearts.png",
         "webp": "queen-of-hearts.webp",
         "jpg": "queen-of-hearts.jpg"
     },
@@ -302,7 +302,7 @@ const cardsInfo = [{
     "heading": "King of Hearts",
     "name": "king-of-hearts",
     "images": {
-        "svg": "king-of-hearts.svg",
+        "png": "king-of-hearts.png",
         "webp": "king-of-hearts.webp",
         "jpg": "king-of-hearts.jpg"
     },
@@ -327,7 +327,7 @@ const cardsInfo = [{
     "heading": "Ace of Spades",
     "name": "ace-of-spades",
     "images": {
-        "svg": "ace-of-spades.svg",
+        "png": "ace-of-spades.png",
         "webp": "ace-of-spades.webp",
         "jpg": "ace-of-spades.jpg"
     },
@@ -352,7 +352,7 @@ const cardsInfo = [{
     "heading": "Two of Spades",
     "name": "two-of-spades",
     "images": {
-        "svg": "two-of-spades.svg",
+        "png": "two-of-spades.png",
         "webp": "two-of-spades.webp",
         "jpg": "two-of-spades.jpg"
     },
@@ -377,7 +377,7 @@ const cardsInfo = [{
     "heading": "Three of Spades",
     "name": "three-of-spades",
     "images": {
-        "svg": "three-of-spades.svg",
+        "png": "three-of-spades.png",
         "webp": "three-of-spades.webp",
         "jpg": "three-of-spades.jpg"
     },
@@ -402,7 +402,7 @@ const cardsInfo = [{
     "heading": "Four of Spades",
     "name": "four-of-spades",
     "images": {
-        "svg": "four-of-spades.svg",
+        "png": "four-of-spades.png",
         "webp": "four-of-spades.webp",
         "jpg": "four-of-spades.jpg"
     },
@@ -427,7 +427,7 @@ const cardsInfo = [{
     "heading": "Five of Spades",
     "name": "five-of-spades",
     "images": {
-        "svg": "five-of-spades.svg",
+        "png": "five-of-spades.png",
         "webp": "five-of-spades.webp",
         "jpg": "five-of-spades.jpg"
     },
@@ -452,7 +452,7 @@ const cardsInfo = [{
     "heading": "Six of Spades",
     "name": "six-of-spades",
     "images": {
-        "svg": "six-of-spades.svg",
+        "png": "six-of-spades.png",
         "webp": "six-of-spades.webp",
         "jpg": "six-of-spades.jpg"
     },
@@ -477,7 +477,7 @@ const cardsInfo = [{
     "heading": "Seven of Spades",
     "name": "seven-of-spades",
     "images": {
-        "svg": "seven-of-spades.svg",
+        "png": "seven-of-spades.png",
         "webp": "seven-of-spades.webp",
         "jpg": "seven-of-spades.jpg"
     },
@@ -502,7 +502,7 @@ const cardsInfo = [{
     "heading": "Eight of Spades",
     "name": "eight-of-spades",
     "images": {
-        "svg": "eight-of-spades.svg",
+        "png": "eight-of-spades.png",
         "webp": "eight-of-spades.webp",
         "jpg": "eight-of-spades.jpg"
     },
@@ -527,7 +527,7 @@ const cardsInfo = [{
     "heading": "Nine of Spades",
     "name": "nine-of-spades",
     "images": {
-        "svg": "nine-of-spades.svg",
+        "png": "nine-of-spades.png",
         "webp": "nine-of-spades.webp",
         "jpg": "nine-of-spades.jpg"
     },
@@ -552,7 +552,7 @@ const cardsInfo = [{
     "heading": "Ten of Spades",
     "name": "ten-of-spades",
     "images": {
-        "svg": "ten-of-spades.svg",
+        "png": "ten-of-spades.png",
         "webp": "ten-of-spades.webp",
         "jpg": "ten-of-spades.jpg"
     },
@@ -577,7 +577,7 @@ const cardsInfo = [{
     "heading": "Jack of Spades",
     "name": "jack-of-spades",
     "images": {
-        "svg": "jack-of-spades.svg",
+        "png": "jack-of-spades.png",
         "webp": "jack-of-spades.webp",
         "jpg": "jack-of-spades.jpg"
     },
@@ -602,7 +602,7 @@ const cardsInfo = [{
     "heading": "Queen of Spades",
     "name": "queen-of-spades",
     "images": {
-        "svg": "queen-of-spades.svg",
+        "png": "queen-of-spades.png",
         "webp": "queen-of-spades.webp",
         "jpg": "queen-of-spades.jpg"
     },
@@ -627,7 +627,7 @@ const cardsInfo = [{
     "heading": "King of Spades",
     "name": "king-of-spades",
     "images": {
-        "svg": "king-of-spades.svg",
+        "png": "king-of-spades.png",
         "webp": "king-of-spades.webp",
         "jpg": "king-of-spades.jpg"
     },
@@ -652,7 +652,7 @@ const cardsInfo = [{
     "heading": "Ace of Diamonds",
     "name": "ace-of-diamonds",
     "images": {
-        "svg": "ace-of-diamonds.svg",
+        "png": "ace-of-diamonds.png",
         "webp": "ace-of-diamonds.webp",
         "jpg": "ace-of-diamonds.jpg"
     },
@@ -677,7 +677,7 @@ const cardsInfo = [{
     "heading": "Two of Diamonds",
     "name": "two-of-diamonds",
     "images": {
-        "svg": "two-of-diamonds.svg",
+        "png": "two-of-diamonds.png",
         "webp": "two-of-diamonds.webp",
         "jpg": "two-of-diamonds.jpg"
     },
@@ -702,7 +702,7 @@ const cardsInfo = [{
     "heading": "Three of Diamonds",
     "name": "three-of-diamonds",
     "images": {
-        "svg": "three-of-diamonds.svg",
+        "png": "three-of-diamonds.png",
         "webp": "three-of-diamonds.webp",
         "jpg": "three-of-diamonds.jpg"
     },
@@ -727,7 +727,7 @@ const cardsInfo = [{
     "heading": "Four of Diamonds",
     "name": "four-of-diamonds",
     "images": {
-        "svg": "four-of-diamonds.svg",
+        "png": "four-of-diamonds.png",
         "webp": "four-of-diamonds.webp",
         "jpg": "four-of-diamonds.jpg"
     },
@@ -752,7 +752,7 @@ const cardsInfo = [{
     "heading": "Five of Diamonds",
     "name": "five-of-diamonds",
     "images": {
-        "svg": "five-of-diamonds.svg",
+        "png": "five-of-diamonds.png",
         "webp": "five-of-diamonds.webp",
         "jpg": "five-of-diamonds.jpg"
     },
@@ -777,7 +777,7 @@ const cardsInfo = [{
     "heading": "Six of Diamonds",
     "name": "six-of-diamonds",
     "images": {
-        "svg": "six-of-diamonds.svg",
+        "png": "six-of-diamonds.png",
         "webp": "six-of-diamonds.webp",
         "jpg": "six-of-diamonds.jpg"
     },
@@ -802,7 +802,7 @@ const cardsInfo = [{
     "heading": "Seven of Diamonds",
     "name": "seven-of-diamonds",
     "images": {
-        "svg": "seven-of-diamonds.svg",
+        "png": "seven-of-diamonds.png",
         "webp": "seven-of-diamonds.webp",
         "jpg": "seven-of-diamonds.jpg"
     },
@@ -827,7 +827,7 @@ const cardsInfo = [{
     "heading": "Eight of Diamonds",
     "name": "eight-of-diamonds",
     "images": {
-        "svg": "eight-of-diamonds.svg",
+        "png": "eight-of-diamonds.png",
         "webp": "eight-of-diamonds.webp",
         "jpg": "eight-of-diamonds.jpg"
     },
@@ -852,7 +852,7 @@ const cardsInfo = [{
     "heading": "Nine of Diamonds",
     "name": "nine-of-diamonds",
     "images": {
-        "svg": "nine-of-diamonds.svg",
+        "png": "nine-of-diamonds.png",
         "webp": "nine-of-diamonds.webp",
         "jpg": "nine-of-diamonds.jpg"
     },
@@ -877,7 +877,7 @@ const cardsInfo = [{
     "heading": "Ten of Diamonds",
     "name": "ten-of-diamonds",
     "images": {
-        "svg": "ten-of-diamonds.svg",
+        "png": "ten-of-diamonds.png",
         "webp": "ten-of-diamonds.webp",
         "jpg": "ten-of-diamonds.jpg"
     },
@@ -902,7 +902,7 @@ const cardsInfo = [{
     "heading": "Jack of Diamonds",
     "name": "jack-of-diamonds",
     "images": {
-        "svg": "jack-of-diamonds.svg",
+        "png": "jack-of-diamonds.png",
         "webp": "jack-of-diamonds.webp",
         "jpg": "jack-of-diamonds.jpg"
     },
@@ -927,7 +927,7 @@ const cardsInfo = [{
     "heading": "Queen of Diamonds",
     "name": "queen-of-diamonds",
     "images": {
-        "svg": "queen-of-diamonds.svg",
+        "png": "queen-of-diamonds.png",
         "webp": "queen-of-diamonds.webp",
         "jpg": "queen-of-diamonds.jpg"
     },
@@ -952,7 +952,7 @@ const cardsInfo = [{
     "heading": "King of Diamonds",
     "name": "king-of-diamonds",
     "images": {
-        "svg": "king-of-diamonds.svg",
+        "png": "king-of-diamonds.png",
         "webp": "king-of-diamonds.webp",
         "jpg": "king-of-diamonds.jpg"
     },
@@ -977,7 +977,7 @@ const cardsInfo = [{
     "heading": "Ace of Clubs",
     "name": "ace-of-clubs",
     "images": {
-        "svg": "ace-of-clubs.svg",
+        "png": "ace-of-clubs.png",
         "webp": "ace-of-clubs.webp",
         "jpg": "ace-of-clubs.jpg"
     },
@@ -1002,7 +1002,7 @@ const cardsInfo = [{
     "heading": "Two of Clubs",
     "name": "two-of-clubs",
     "images": {
-        "svg": "two-of-clubs.svg",
+        "png": "two-of-clubs.png",
         "webp": "two-of-clubs.webp",
         "jpg": "two-of-clubs.jpg"
     },
@@ -1027,7 +1027,7 @@ const cardsInfo = [{
     "heading": "Three of Clubs",
     "name": "three-of-clubs",
     "images": {
-        "svg": "three-of-clubs.svg",
+        "png": "three-of-clubs.png",
         "webp": "three-of-clubs.webp",
         "jpg": "three-of-clubs.jpg"
     },
@@ -1052,7 +1052,7 @@ const cardsInfo = [{
     "heading": "Four of Clubs",
     "name": "four-of-clubs",
     "images": {
-        "svg": "four-of-clubs.svg",
+        "png": "four-of-clubs.png",
         "webp": "four-of-clubs.webp",
         "jpg": "four-of-clubs.jpg"
     },
@@ -1077,7 +1077,7 @@ const cardsInfo = [{
     "heading": "Five of Clubs",
     "name": "five-of-clubs",
     "images": {
-        "svg": "five-of-clubs.svg",
+        "png": "five-of-clubs.png",
         "webp": "five-of-clubs.webp",
         "jpg": "five-of-clubs.jpg"
     },
@@ -1102,7 +1102,7 @@ const cardsInfo = [{
     "heading": "Six of Clubs",
     "name": "six-of-clubs",
     "images": {
-        "svg": "six-of-clubs.svg",
+        "png": "six-of-clubs.png",
         "webp": "six-of-clubs.webp",
         "jpg": "six-of-clubs.jpg"
     },
@@ -1127,7 +1127,7 @@ const cardsInfo = [{
     "heading": "Seven of Clubs",
     "name": "seven-of-clubs",
     "images": {
-        "svg": "seven-of-clubs.svg",
+        "png": "seven-of-clubs.png",
         "webp": "seven-of-clubs.webp",
         "jpg": "seven-of-clubs.jpg"
     },
@@ -1152,7 +1152,7 @@ const cardsInfo = [{
     "heading": "Eight of Clubs",
     "name": "eight-of-clubs",
     "images": {
-        "svg": "eight-of-clubs.svg",
+        "png": "eight-of-clubs.png",
         "webp": "eight-of-clubs.webp",
         "jpg": "eight-of-clubs.jpg"
     },
@@ -1177,7 +1177,7 @@ const cardsInfo = [{
     "heading": "Nine of Clubs",
     "name": "nine-of-clubs",
     "images": {
-        "svg": "nine-of-clubs.svg",
+        "png": "nine-of-clubs.png",
         "webp": "nine-of-clubs.webp",
         "jpg": "nine-of-clubs.jpg"
     },
@@ -1202,7 +1202,7 @@ const cardsInfo = [{
     "heading": "Ten of Clubs",
     "name": "ten-of-clubs",
     "images": {
-        "svg": "ten-of-clubs.svg",
+        "png": "ten-of-clubs.png",
         "webp": "ten-of-clubs.webp",
         "jpg": "ten-of-clubs.jpg"
     },
@@ -1227,7 +1227,7 @@ const cardsInfo = [{
     "heading": "Jack of Clubs",
     "name": "jack-of-clubs",
     "images": {
-        "svg": "jack-of-clubs.svg",
+        "png": "jack-of-clubs.png",
         "webp": "jack-of-clubs.webp",
         "jpg": "jack-of-clubs.jpg"
     },
@@ -1252,7 +1252,7 @@ const cardsInfo = [{
     "heading": "Queen of Clubs",
     "name": "queen-of-clubs",
     "images": {
-        "svg": "queen-of-clubs.svg",
+        "png": "queen-of-clubs.png",
         "webp": "queen-of-clubs.webp",
         "jpg": "queen-of-clubs.jpg"
     },
@@ -1277,7 +1277,7 @@ const cardsInfo = [{
     "heading": "King of Clubs",
     "name": "king-of-clubs",
     "images": {
-        "svg": "king-of-clubs.svg",
+        "png": "king-of-clubs.png",
         "webp": "king-of-clubs.webp",
         "jpg": "king-of-clubs.jpg"
     },
