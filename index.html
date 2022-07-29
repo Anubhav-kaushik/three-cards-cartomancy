@@ -59,7 +59,7 @@
                             </div>
 
                             <div class="promo-icon-content" data-animation-fade="in bottom">
-                                <h4 data-color="secondary">
+                                <h4 data-color="secondary" data-font-family="cb">
                                     Past/Present/Future
                                 </h4>
                                 <p>
@@ -77,7 +77,7 @@
                             </div>
 
                             <div class="promo-icon-content" data-animation-fade="in bottom">
-                                <h4 data-color="secondary">
+                                <h4 data-color="secondary" data-font-family="cb">
                                     Love
                                 </h4>
                                 <p>
@@ -95,7 +95,7 @@
                             </div>
 
                             <div class="promo-icon-content" data-animation-fade="in bottom">
-                                <h4 data-color="secondary">
+                                <h4 data-color="secondary" data-font-family="cb">
                                     Career
                                 </h4>
                                 <p>
@@ -110,27 +110,27 @@
 
                     <div class="btn-container">
                         <div class="arrow-container">
-                            <img src="infographics/interactive-names/arrow-btn.svg" alt="click here" onclick="toggleElementVisibility('.popup-container');observeInputValue('#popup-input', '#popup-btn')">
+                            <img src="infographics/interactive-names/arrow-btn.svg" alt="click here" onclick="toggleElementVisibility('.popup-container');reachIntoView('#popup-input');observeInputValue('#popup-input', '#popup-btn')">
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="shuffle-card-section" data-visibility="hidden" id="cartomancy-section-2">
-                <h4>Select your reading and see what’s ahead.</h4>
+                <h4 data-font-family="cb">Select your reading and see what’s ahead.</h4>
                 <div class="spread-btn-container">
                     <div class="spread-btn" data-spread="1" onclick="changeSpreadStatus(this)">
-                        <p>
+                        <p data-font-family="csb">
                             Past / Present / Future
                         </p>
                     </div>
                     <div class="spread-btn" data-spread="2" onclick="changeSpreadStatus(this)">
-                        <p>
+                        <p data-font-family="csb">
                             Love
                         </p>
                     </div>
                     <div class="spread-btn" data-spread="3" onclick="changeSpreadStatus(this)">
-                        <p>
+                        <p data-font-family="csb">
                             Career
                         </p>
                     </div>
@@ -141,7 +141,7 @@
                 </div>
 
                 <div class="btn-container">
-                    <button class="btn" onclick="shuffleCards()">Shuffle Cards</button>
+                    <button class="btn" onclick="shuffleCards()" data-font-family="csb">Shuffle Cards</button>
                 </div>
 
             </section>
@@ -170,12 +170,12 @@
                                     </picture>
                                 </div>
                                 <div class="row">
-                                    <p>Ace of Hearts</p>
+                                    <p data-font-family="cb" data-font-size="special-p-1">Ace of Hearts</p>
                                 </div>
                             </div>
                             <div class="column" id="column-2">
                                 <div class="row">
-                                    <h3 data-color="primary">Past</h3>
+                                    <h3 data-color="primary" data-font-family="cb">Past</h3>
                                     <p>You’re fondly looking back on the beginning of a treasured relationship or
                                         friendship.
                                         <br>
@@ -183,11 +183,11 @@
                                         situation.</p>
                                 </div>
                                 <div class="row">
-                                    <h3 data-color="primary">Present</h3>
+                                    <h3 data-color="primary" data-font-family="cb">Present</h3>
                                     <p>A new friendship or relationship is blossoming in your life. Good news is close at
                                         hand.</p>
                                 </div>
-                                <div class="row">
+                                <div class="row" data-font-family="cb">
                                     <h3 data-color="primary">Future</h3>
                                     <p>Though you may feel anxious now, you can wait confidently upon the future. A lovely
                                         new friendship or relationship is on the horizon.</p>
@@ -208,7 +208,7 @@
                     </div>
 
                     <div class="btn-container">
-                        <button onclick="resetGame()">Play Again</button>
+                        <button onclick="resetGame()" data-font-family="csb">Start Again</button>
                     </div>
                 </div>
             </section>
@@ -220,13 +220,14 @@
                             placeholder="Enter your question or subject here">
                     </div>
                     <div class="btn-container">
-                        <button onclick="quesSubmit()" id="popup-btn" disabled>Submit</button>
+                        <button onclick="quesSubmit()" id="popup-btn" disabled data-font-family="csb" data-font-size="special-btn-1">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="static/js/basic-func.js"></script>
     <script src="static/js/shuffle-card.js"></script>
     <script src="static/js/action.js"></script>
 </body>

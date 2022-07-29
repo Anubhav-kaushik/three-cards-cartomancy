@@ -16,6 +16,8 @@ const resultContainerSelector = '#cartomancy-section-3 .result-container';
 const imgBaseUrl = 'infographics/interactive-names/';
 
 let selectedSpread, selectedCard;
+let inputCheckFlag = true;
+let btnEnabled = false;
 
 // Required Steps
 // click on the arrow button -> open popup
@@ -43,29 +45,39 @@ function quesSubmit() {
         observeCards();
         isBothSelected();
     }, 500);
+
+    inputCheckFlag = false;
 }
 
-function checkInputValue(inputSelector, btnSelector) {
-    const input = mainContainer.querySelector(inputSelector);
+function checkInputValue(input, btnSelector) {
     const btn = mainContainer.querySelector(btnSelector);
 
     const value = input.value;
 
-    if (value) {
+    if (value.length > 4) {
         btn.disabled = false;
+        btnEnabled = true;
     } else {
         btn.disabled = true;
+        btnEnabled = false;
     }
 }
 
-function observeInputValue(inputSelector, btnSelector) {
+addEventListener('keydown', (event) => {
+    if (event.key == 'Enter' && btnEnabled) {
+        quesSubmit();
+    }
+})
+
+async function observeInputValue(inputSelector, btnSelector) {
     const input = mainContainer.querySelector(inputSelector);
 
-    checkInputValue(inputSelector, btnSelector);
+    inputCheckFlag = true;
 
-    input.addEventListener('change', (event) => {
-        checkInputValue(inputSelector, btnSelector);
-    })
+    while(inputCheckFlag) {
+        checkInputValue(input, btnSelector);
+        await sleep(0.1)
+    }
 }
 
 
@@ -154,6 +166,7 @@ function createSpreadHTML(spreadData) {
 
         const heading = document.createElement('h3');
         heading.dataset.color = 'primary';
+        heading.dataset.fontFamily = 'cb';
         heading.innerHTML = key;
         row.append(heading);
 
