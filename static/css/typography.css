@@ -67,7 +67,7 @@
 @media (max-width: 550px) {
     :root {
         --font-size-p: 1em;
-        --font-size-h1: 2em;
+        --font-size-h1: 2.5em;
         --font-size-h2: 1.625em;
         --font-size-h3: 1.375em;
         --font-size-h4: 1.125em;
