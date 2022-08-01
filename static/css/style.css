@@ -69,3 +69,19 @@
     color: var(--input-text-color, white)
 }
 
+.cartomancy-container ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff7;
+    opacity: 1;
+    /* Firefox */
+}
+
+.cartomancy-container :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff7;
+}
+
+.cartomancy-container ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff7;
+}

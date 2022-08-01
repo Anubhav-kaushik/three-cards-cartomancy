@@ -15,7 +15,9 @@ const resultContainerSelector = '#cartomancy-section-3 .result-container';
 
 const imgBaseUrl = 'infographics/interactive-names/';
 
-let selectedSpread, selectedCard;
+let selectedSpread;
+let selectedCards = [];
+let isMaxCardSelected = false;
 let inputCheckFlag = true;
 let btnEnabled = false;
 
@@ -108,19 +110,26 @@ function observeSpread(spreadSelector) {
 
 function observeCards() {
     const cards = mainContainer.querySelectorAll(cardsSelector);
-    selectedCard = undefined;
+    selectedCards = [];
+    isMaxCardSelected = false;
 
+    let count = 0;
     for (let card of cards) {
         if (card.dataset.choosen == 'true') {
-            selectedCard = card.dataset.cardNum;
+            count++;
+            selectedCards.push(card.dataset.cardNum);
         }
+    }
+
+    if (count == 3) {
+        isMaxCardSelected = true;
     }
 }
 
 function isBothSelected() {
-    if (selectedCard && selectedSpread) {
+    if (isMaxCardSelected && selectedSpread) {
         console.log('both selected')
-        updateData(selectedCard, selectedSpread)
+        updateData(selectedCards, selectedSpread)
         
         clearInterval(observerInterval);
     }
@@ -130,13 +139,31 @@ function isBothSelected() {
 // enter this data into the result container
 // hide section 2 and show section 3
 
-function updateData(cardNum, spreadNum) {
-    const resultContainer = mainContainer.querySelector(resultContainerSelector);
+function updateData(cardNums, spreadNum) {
+    const resultContainers = mainContainer.querySelectorAll(resultContainerSelector);
 
-    const cardData = cardsInfo[cardNum - 1]; // dict type
-    const spreadData = cardData.spread[spreadNum]; // dict type
+    for (let i = 0; i < resultContainers.length; i++) {
+        let cardNum = cardNums[i];
+        const cardData = cardsInfo[cardNum - 1];
 
-    const column1 = resultContainer.querySelector('#column-1');
+        const spreadValues = Object.keys(cardData.spread[spreadNum]);
+        
+        const spreadDataKey = spreadValues[i];
+        const spreadData = {};
+        spreadData[spreadDataKey] = cardData.spread[spreadNum][spreadDataKey];
+
+        createResultContainer(cardData, spreadData, resultContainers[i]);
+    }
+
+    console.log('Toggling');
+    toggleElementVisibility(section2Selector);
+    toggleElementVisibility(section3Selector);
+
+    reachIntoView('#psychic-source-logo')
+}
+
+function createResultContainer(cardData, spreadData, container) {
+    const column1 = container.querySelector('#column-1');
     const column1ImgSource = column1.querySelector('source');
     const webpSrc = `${imgBaseUrl}cards/webp/${cardData.images.webp}`;
     column1ImgSource.setAttribute('src', webpSrc);
@@ -147,12 +174,8 @@ function updateData(cardNum, spreadNum) {
     column1Para.innerHTML = cardData.heading;
 
     const spreadHtml = createSpreadHTML(spreadData);
-    const column2 = resultContainer.querySelector('#column-2');
+    const column2 = container.querySelector('#column-2');
     column2.outerHTML = spreadHtml.outerHTML;
-
-    console.log('Toggling');
-    toggleElementVisibility(section2Selector);
-    toggleElementVisibility(section3Selector);
 }
 
 function createSpreadHTML(spreadData) {
@@ -198,6 +221,7 @@ function resetSpreadBtn(spreadSelector) {
 function resetGame() {
     toggleElementVisibility(section3Selector)
     toggleElementVisibility(section1Selector)
+    reachIntoView('#psychic-source-logo')
 
     // empty input field
     resetInputField(popupInputSelector)
@@ -209,7 +233,8 @@ function resetGame() {
     resetCardsPosition()
 
     selectedSpread = undefined;
-    selectedCard = undefined;
+    selectedCards = [];
+    isMaxCardSelected = false;
 }
 
 resetInputField(popupInputSelector)

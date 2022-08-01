@@ -1,4 +1,4 @@
-const cardContainerClass = '.cards-container';
+const cardContainerClass = '.cartomancy-container .cards-container';
 const cardClass = '.card';
 
 function createCard(cardId) {
@@ -381,14 +381,14 @@ for (let card of cards) {
         const cardId = entry.target.dataset.cardNum;
         const isChoosen = entry.target.dataset.choosen
 
-        if (numCardsChoosed() < 1 && isChoosen == "false") {
+        if (numCardsChoosed() < 3 && isChoosen == "false") {
             // moveUp(cardId, 40);
             entry.target.dataset.choosen = true;
         } else if (isChoosen == "true") {
             // moveUp(cardId, 0);
             entry.target.dataset.choosen = false;
         } else {
-            console.log('You can only choose 1 cards')
+            console.log('You can only choose 3 cards')
         }
     });
 }
